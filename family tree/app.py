@@ -17,19 +17,31 @@ def home():
 # define the route to father webpage
 @app.route("/father")
 def second_flask():
-    return ""
+    name = "MANISH"
+    age = " 40"
+
+    return render_template('father.html' , name = name , age = age)
+  
 
 
 # define the route to mother webpage
 @app.route("/mother")
 def second_flask():
-    return ""
+     name = "EKTA"
+     age = " 35"
+
+    return render_template('mother.html' , name = name , age = age)
+
 
 
 # define the route to friends webpage
 @app.route("/friends")
 def second_flask():
-    return ""
+     name = "KASHISH"
+     age = " 14"
+
+    return render_template('friends.html' , name = name , age = age)
+
 
 # add other routes, if you want
 
